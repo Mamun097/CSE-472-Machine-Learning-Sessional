@@ -71,5 +71,7 @@ if __name__ == "__main__":
         A_k = low_rank_approximation(image, k)
         reconstructed_images.append(A_k)
 
+    print("Image is clearly visible for the lowest value of k:50")
+
     # Plot the original and reconstructed images for different k values
     plot_images(reconstructed_images, [f"Rank={k}" for k in k_values])
