@@ -64,7 +64,7 @@ if __name__ == "__main__":
     image = load_and_preprocess_image(file_path)
 
     # Perform SVD and reconstruct images for different values of k
-    k_values = [1, 5, 10, 20, 30, 40, 45, 50, 100, 200, 400, 900]
+    k_values = [1, 5, 10, 20, 30, 40, 45, 50, 75, 100, 200, 400]
     reconstructed_images = []
 
     for k in k_values:
